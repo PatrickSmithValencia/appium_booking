@@ -35,7 +35,7 @@ public class Tutorial02 {
                 .eventTimings();
 
         try {
-            driver = new AppiumDriver(new URL("http://127.0.0.1:4723"), options);
+            driver = new AppiumDriver(new URL("http://0.0.0.0:4723/wd/hub"), options);
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
@@ -175,3 +175,17 @@ public class Tutorial02 {
     }
 
 }
+
+
+
+//    WebElement ele01 = driver.findElement(AppiumBy.id("com.booking:id/facet_with_bottom_sheet_header_content"));
+//
+//    UiAutomator2Options options = new UiAutomator2Options()
+//            .setPlatformName("Android")
+//            .setAutomationName("uiautomator2")
+//            .setDeviceName("emulator-5554").setAppPackage("com.booking")
+//            .setAppActivity("com.booking.startup.HomeActivity")
+////                .setUnlockKey("6263")
+//            .setPlatformVersion("13")
+//            .setNoReset(true)
+//            .eventTimings();
