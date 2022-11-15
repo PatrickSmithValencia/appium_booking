@@ -1,4 +1,4 @@
-Requirements:
+Requirements: 
 
 Java JDK 11 installation
 
